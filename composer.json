@@ -1,0 +1,24 @@
+{
+    "name": "voldemarpro/keccak",
+    "description": "Pure PHP implementation of Keccak hashing",
+    "keywords": ["keccak", "keccak-256", "sha3", "shake"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno Bierbaumer",
+            "homepage": "https://github.com/0xbb"
+        },
+         {
+            "name": "Vladimir Vyatkin",
+            "homepage": "https://github.com/voldemarpro"
+        }       
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keccak\\": "src"
+        }
+    }
+}
