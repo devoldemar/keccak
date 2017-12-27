@@ -95,7 +95,7 @@ final class Keccak256
         }
     }
 	
-	private static function keccak32($input, $capacity, $outputlength, $suffix, $raw_output)
+    private static function keccak32($input, $capacity, $outputlength, $suffix, $raw_output)
     {
         $capacity /= 8;
         $inlen = \mb_strlen($input, '8bit');
@@ -143,15 +143,15 @@ final class Keccak256
         return self::keccak32($input, $capacity, $outputlength, $suffix, $raw_output);
     }
 
-	public static function hash($input, $mdlen, $raw_output = false)
+    public static function hash($input, $mdlen, $raw_output = false)
     {
-        if( !in_array($mdlen, [224, 256, 384, 512], true) ) {
+        if( !in_array($mdlen, [224, 256], true) ) {
             throw new \Exception('Unsupported Keccak256 Hash output size.');
         }
         return self::keccak($input, $mdlen, $mdlen, 0x01, $raw_output);
     }
     
-	public static function shake($input, $security_level, $outlen, $raw_output = false)
+    public static function shake($input, $security_level, $outlen, $raw_output = false)
     {
         if( !in_array($security_level, [128, 256], true) ) {
             throw new \Exception('Unsupported Keccak256 Shake security level.');
