@@ -1,7 +1,7 @@
 # keccak
 Pure PHP implementation of Keccak hash algorithm with 224- or 256-bits digest.
 
-Based on Bruno Bierbaumer's script, with change of padding rule and cleanup of patches for multibyte operations
+Based on Bruno Bierbaumer's script for SHA-3, with change of padding rule and cleanup of patches for multibyte operations
 
 ## Usage
 
