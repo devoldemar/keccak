@@ -120,7 +120,7 @@ final class Keccak256
         $temp = \mb_substr($input, $in_t, $inlen, '8bit');
         $temp = str_pad($temp, $rsiz, "\x0", STR_PAD_RIGHT);
         $temp[$inlen] = chr($suffix);
-        $temp[$rsiz - 1] = chr($temp[$rsiz - 1] | 0x80);
+        $temp[$rsiz - 1] = chr(hexdec($temp[$rsiz - 1]) | 0x80);
         for ($i = 0; $i < $rsizw; $i++) {
             $t = unpack('v*', \mb_substr($temp, $i * 8, 8, '8bit'));
             $st[$i] = [
