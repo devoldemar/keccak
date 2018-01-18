@@ -1,5 +1,5 @@
 {
-    "name": "voldemarpro/keccak",
+    "name": "devoldemar/keccak",
     "description": "Pure PHP implementation of Keccak hashing",
     "keywords": ["keccak", "keccak-256", "sha3", "shake"],
     "license": "MIT",
@@ -10,7 +10,7 @@
         },
          {
             "name": "Vladimir Vyatkin",
-            "homepage": "https://github.com/voldemarpro"
+            "homepage": "https://github.com/devoldemar"
         }       
     ],
     "require": {
